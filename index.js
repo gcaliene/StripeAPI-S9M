@@ -9,6 +9,8 @@ const app = express();
 
 const { PORT, DATABASE_URL } = require('./config');
 
+require('./routes/billingRoutes')(app);
+
 
 let server;
 
